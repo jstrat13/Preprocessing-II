@@ -168,6 +168,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  background: #17A2B8;
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
 .topSection .intro img {
   margin-bottom: 30px;
 }
@@ -175,20 +187,42 @@ img {
   padding-bottom: 30px;
   border-bottom: 1px dashed grey;
 }
+@media ( max-width: 500px ) {
+  .topSection .intro {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
 .topSection .navBar {
   margin-right: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   padding-bottom: 30px;
   border-bottom: 1px dashed grey;
+  height: 100px;
+}
+@media ( max-width: 500px ) {
+  .topSection .navBar {
+    flex-direction: column;
+  }
+}
+@media ( max-width: 500px ) {
+  .topSection .navBar h1 {
+    padding-bottom: 20px;
+  }
 }
 .topSection .navBar nav {
   width: 53%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
+@media ( max-width: 500px ) {
+  .topSection .navBar nav {
+    width: 85%;
+  }
 }
 .topSection .navBar nav a {
   text-decoration: none;
@@ -214,13 +248,31 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .text-content {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    margin: 0 auto;
+    width: 85%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -228,6 +280,11 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media ( max-width: 500px ) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -250,7 +307,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
