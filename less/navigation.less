@@ -1,1 +1,57 @@
-// Navigation Styles here
+.topSection {
+    .intro{
+        img{
+            margin-bottom: 30px;
+        }
+        p {
+            padding-bottom: 30px;
+            border-bottom: 1px dashed grey;
+        }
+
+        @media @mobile{
+            width: 85%;
+            margin: 0 auto;
+          }
+    }
+    .navBar{
+        margin-right: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px dashed grey;
+        height: 100px;
+
+        @media @mobile {
+            flex-direction: column;
+
+        }
+        h1{
+            @media @mobile {
+                padding-bottom: 20px;
+    
+            }
+        }
+    
+        nav{
+            width: 53%;
+            display: flex;
+            justify-content: space-around;
+            @media @mobile {
+                width: 85%;
+            }
+            
+        
+            a{
+                text-decoration: none;
+                font-family: 'Indie Flower', cursive;
+                font-size: 2rem;
+                font-style: italic;
+                color: black;
+
+            }
+        }
+    }
+}
